@@ -47,9 +47,11 @@ Construir uma aplicação web simples em HTML5, CSS3 e JavaScript puro, validand
 ## Como Executar
 
 ### 1. No navegador ou Playcode.io
+
 Abra [`index.html`](index.html) diretamente no navegador (ou importe `index.html`, `style.css` e `script.js` no [Playcode.io](https://playcode.io)).
 
 ### 2. Testes automatizados (Node.js)
+
 O arquivo [`tests/email.test.js`](tests/email.test.js) importa diretamente `EMAIL_REGEX`, `analisarEmail` e `escapeHTML` de [`script.js`](script.js) e executa 34 casos de teste sem dependências externas:
 
 ```bash
@@ -63,15 +65,15 @@ Saída esperada: `RESULTADO FINAL: 34/34 testes passaram`.
 ## Evidências na Plataforma Playcode.io
 
 | Criação do Projeto Vazio | Código HTML & Preview |
-|---|---|
+| --- | --- |
 | ![Criação do projeto](evidencias/01_criacao_projeto_playcode.png) | ![Código HTML](evidencias/02_codigo_html_playcode.png) |
 
 | Teste: Campo Vazio | Teste: Sem `@` (`bruno.souza.gmail.com`) |
-|---|---|
+| --- | --- |
 | ![Campo vazio](evidencias/05_teste_campo_vazio_playcode.png) | ![Sem arroba](evidencias/06_teste_email_invalido_sem_arroba_playcode.png) |
 
 | Teste: Domínio Incompleto (`bruno@gmail`) | Teste: E-mail Válido (`bruno.souza@gmail.com`) |
-|---|---|
+| --- | --- |
 | ![Domínio incompleto](evidencias/07_teste_email_invalido_dominio_playcode.png) | ![E-mail válido](evidencias/08_teste_email_valido_playcode.png) |
 
 ---
