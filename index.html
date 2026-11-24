@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Validação de E-mail – Aula Prática JS</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="card">
+    <header class="card-header">
+      <h1>Validação de E-mail</h1>
+      <p>Informe um endereço de e-mail para validar sua composição.</p>
+    </header>
+
+    <form id="emailForm" novalidate>
+      <div class="form-group">
+        <label for="emailInput">Endereço de E-mail</label>
+        <input
+          type="email"
+          id="emailInput"
+          name="email"
+          placeholder="exemplo@dominio.com"
+          autocomplete="email"
+          aria-describedby="emailFeedback"
+        />
+        <div class="feedback" id="emailFeedback" role="alert" aria-live="polite"></div>
+      </div>
+
+      <button type="submit" id="btnValidar" class="btn-primary">Validar E-mail</button>
+
+      <section class="email-info" aria-label="Composição de um e-mail válido">
+        <h2>Composição correta de um e-mail</h2>
+        <p>
+          Estrutura padrão: <code>usuario</code><strong>@</strong><code>dominio</code><strong>.</strong><code>extensao</code>
+          (ex.: <code>bruno.souza@gmail.com</code>).
+        </p>
+        <ul>
+          <li>Conter exatamente um símbolo <strong>@</strong> e usuário válido antes dele;</li>
+          <li>Apresentar domínio com ponto e extensão entre 2 e 8 letras (<code>.com</code>, <code>.br</code>);</li>
+          <li>Não possuir espaços em branco.</li>
+        </ul>
+      </section>
+    </form>
+
+    <footer class="card-footer">
+      UNIDERP • Sistemas de Informação • Bruno Cardoso De Oliveira Souza (RA: 8447403702)
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

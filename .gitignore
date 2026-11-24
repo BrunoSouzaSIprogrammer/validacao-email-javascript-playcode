@@ -1,0 +1,15 @@
+# Scripts auxiliares de geração/captura
+capture_playcode.py
+generate_abnt_report.py
+_probe.py
+evidencias/debug_*.png
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Temporários do Office e SO
+~$*.docx
+.DS_Store
+Thumbs.db
